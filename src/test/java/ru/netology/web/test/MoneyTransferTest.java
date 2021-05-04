@@ -1,4 +1,9 @@
-package ru.netology.web.ru.netology.web.test;
+package ru.netology.web.test;
+
+import lombok.val;
+import org.junit.jupiter.api.Test;
+
+import static com.codeborne.selenide.Selenide.open;
 
 public class MoneyTransferTest {
     @Test
@@ -32,4 +37,4 @@ public class MoneyTransferTest {
         verificationPage.validVerify(verificationCode);
     }
 }
-}
+
