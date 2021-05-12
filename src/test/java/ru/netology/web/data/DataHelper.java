@@ -54,7 +54,7 @@ public class DataHelper {
                 10000);
     }
 
-    public static void resetBalance(DashboardPage dashboardPage, int firstCardBalance, int secondCardBalance) {
+    public static void resetBalance(DashboardPage  dashboardPage, int firstCardBalance, int secondCardBalance) {
 
         if ((firstCardBalance == firstCard().getCardBalance()) && (secondCardBalance == secondCard().getCardBalance())) {
             return;

@@ -6,7 +6,7 @@ import lombok.val;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class DashboardPege {
+public class DashboardPage {
     private SelenideElement heading = $("[data-test-id=dashboard]");
     private final String balanceStart = "баланс: \n";
     private final String balanceFinish = "\n р. ";
