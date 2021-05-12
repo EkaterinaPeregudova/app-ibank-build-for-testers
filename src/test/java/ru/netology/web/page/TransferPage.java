@@ -1,6 +1,7 @@
 package ru.netology.web.page;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
@@ -20,7 +21,7 @@ public class TransferPage {
 
 
     public DashboardPage transferAmount(String sum, String from) {
-        amount.sendKeys(CONTROL + "a", DELETE);
+        amount.doubleClick().sendKeys(Keys.DELETE);
         amount.setValue(sum);
         fromCard.sendKeys(CONTROL + "a", DELETE);
         fromCard.setValue(from);
